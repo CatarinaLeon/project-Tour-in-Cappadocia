@@ -1,32 +1,73 @@
+.section__price{
+    @media screen and (min-width:1260px) {
+        padding-bottom: 200px;
+    }
+}
+.container__price{
+    position: relative;
+}
 .price__title{
     margin-bottom: 100px;
     & span{
         left: 120px;
     }
 }
-.price__box{
-    position: relative;
+.price__list{
     display: flex;
     gap: 70px;
-    &-descr{
+    margin-bottom: 150px;
+    &-item{
         width: 530px;
     }
-    &-title{
-        margin-bottom: 50px;
+}
+.list-item__title{
+    margin-bottom: 50px;
         font-size: 24px;
         line-height: 28px;
-    }
 }
-.price__box-list-item:not(:last-child){
+.list-item__list li:not(:last-child){
     margin-bottom: 20px;
+}
+
+.price__list-request {
+    display: flex;
+    text-align: center;
+}
+
+.price__list-request-item:first-child {
+    padding-top: 105px;
+    width: 600px;
+}
+.list-request-item{
+    margin-bottom: 50px;
+    &-title {
+        margin-bottom: 20px;
+        font-family: 'Balqis';
+        & span {
+            bottom: 0px;
+            left: 300px;
+        }
+    }
+    &-text {
+        margin-bottom: 100px;
+    }
+    &-input{
+        width: 383px;
+        padding: 15px 30px;
+        margin-bottom: 20px;
+        border: 1px solid #E2AB3F;
+    }
+    &-btn{
+        display: block;
+        margin: 0 auto;
+    }
 }
 .price__backroung-img{
     position: absolute;
     right: 0;
-    top: -120px;
+    top: 110px;
     width: 325px;
     height: 445px;
-    // border: 1px solid red;
     background-image: url('../../img/Price/icons-aerostat.svg'),
     url('../../img/Price/icons-aerostat.svg'), url('../../img/Price/icons-aerostat.svg');
     background-repeat: no-repeat;

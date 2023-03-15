@@ -24,6 +24,7 @@
             margin-bottom: 30px;
         }
         &-link{
+            margin-bottom: 20px;
             display: inline-flex;
             align-items: center;
             justify-content: center;
@@ -34,6 +35,16 @@
         }
         &-link svg{
             fill: var(--accent-color);
+        }
+        &-list{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+        &-item{
+            width: 30px;
+            height: 30px;
         }
     }
 }

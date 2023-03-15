@@ -1,0 +1,18 @@
+.title{
+    position: relative;
+    font-size: 96px;
+    line-height: 128px;
+
+    color: #E2AB3F;
+}
+.title span {
+    position: absolute;
+    bottom: 0;
+    font-family: 'Roboto Condensed';
+    font-style: italic;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+
+    color: #000000;
+}

@@ -38,30 +38,6 @@ h2 {
   font-family: "Balqis";
 }
 
-h2 {
-  position: relative;
-  font-size: 96px;
-  line-height: 128px;
-  color: #E2AB3F;
-}
-
-h2 span {
-  position: absolute;
-  bottom: 0;
-  left: 210px;
-  font-family: "Roboto Condensed";
-  font-style: italic;
-  font-weight: 300;
-  font-size: 24px;
-  line-height: 28px;
-  color: #000000;
-}
-
-.text {
-  font-size: 18px;
-  line-height: 21px;
-}
-
 .container {
   width: 100%;
   padding-left: 15px;
@@ -87,6 +63,7 @@ ul {
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 img {
@@ -118,6 +95,34 @@ img {
   border: 1px solid var(--accent-color);
   cursor: pointer;
   transition-duration: 250ms;
+}
+
+.title {
+  position: relative;
+  font-size: 96px;
+  line-height: 128px;
+  color: #E2AB3F;
+}
+
+.title span {
+  position: absolute;
+  bottom: 0;
+  font-family: "Roboto Condensed";
+  font-style: italic;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+}
+
+.text {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.list-text {
+  font-size: 24px;
+  line-height: 28px;
 }
 
 .mob-menu {
@@ -377,6 +382,10 @@ img {
   margin-top: 80px;
 }
 
+.container__price {
+  position: relative;
+}
+
 .price__title {
   margin-bottom: 100px;
 }
@@ -385,30 +394,70 @@ img {
   left: 120px;
 }
 
-.price__box {
-  position: relative;
+.price__list {
   display: flex;
   gap: 70px;
+  margin-bottom: 150px;
 }
 
-.price__box-descr {
+.price__list-item {
   width: 530px;
 }
 
-.price__box-title {
+.list-item__title {
   margin-bottom: 50px;
   font-size: 24px;
   line-height: 28px;
 }
 
-.price__box-list-item:not(:last-child) {
+.list-item__list li:not(:last-child) {
   margin-bottom: 20px;
+}
+
+.price__list-request {
+  display: flex;
+  text-align: center;
+}
+
+.price__list-request-item:first-child {
+  padding-top: 105px;
+  width: 600px;
+}
+
+.list-request-item {
+  margin-bottom: 50px;
+}
+
+.list-request-item-title {
+  margin-bottom: 20px;
+  font-family: "Balqis";
+}
+
+.list-request-item-title span {
+  bottom: 0px;
+  left: 300px;
+}
+
+.list-request-item-text {
+  margin-bottom: 100px;
+}
+
+.list-request-item-input {
+  width: 383px;
+  padding: 15px 30px;
+  margin-bottom: 20px;
+  border: 1px solid #E2AB3F;
+}
+
+.list-request-item-btn {
+  display: block;
+  margin: 0 auto;
 }
 
 .price__backroung-img {
   position: absolute;
   right: 0;
-  top: -120px;
+  top: 110px;
   width: 325px;
   height: 445px;
   background-image: url("../../img/Price/icons-aerostat.svg"), url("../../img/Price/icons-aerostat.svg"), url("../../img/Price/icons-aerostat.svg");
@@ -433,59 +482,16 @@ img {
   left: 240px;
 }
 
-.route__box-text {
-  margin-bottom: 20px;
-}
-
-.route__box-list {
+.route__box-list-item {
   margin-bottom: 50px;
 }
 
-.route-text {
-  font-size: 24px;
-  line-height: 28px;
+.route__box-list-item-text {
+  margin-bottom: 20px;
 }
 
 .slider {
   width: 570px;
-}
-
-.container__request {
-  display: flex;
-  text-align: center;
-}
-
-.request__box {
-  padding-top: 105px;
-}
-
-.request__box-title {
-  margin-bottom: 52px;
-  position: relative;
-  font-family: "Balqis";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 96px;
-  line-height: 69px;
-  color: #E2AB3F;
-}
-
-.request__box-title span {
-  position: absolute;
-  bottom: -30px;
-  left: 300px;
-  font-family: "Roboto Condensed";
-  font-style: italic;
-  font-weight: 300;
-  font-size: 24px;
-  line-height: 28px;
-  color: #000000;
-}
-
-.request__box-text {
-  margin-bottom: 50px;
-  font-size: 24px;
-  line-height: 28px;
 }
 
 .footer {
@@ -521,6 +527,7 @@ img {
 }
 
 .footer__contacts-box-link {
+  margin-bottom: 20px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -532,6 +539,18 @@ img {
 
 .footer__contacts-box-link svg {
   fill: var(--accent-color);
+}
+
+.footer__contacts-box-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.footer__contacts-box-item {
+  width: 30px;
+  height: 30px;
 }
 
 .footer__contacts-text {
@@ -640,5 +659,9 @@ img {
 @media screen and (min-width: 1260px) {
   .container {
     max-width: 1230px;
+  }
+
+  .section__price {
+    padding-bottom: 200px;
   }
 }
