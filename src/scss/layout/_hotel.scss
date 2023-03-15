@@ -1,0 +1,21 @@
+.hotel__title{
+    margin-bottom: 100px;
+    & span{
+        left: 120px;
+    }
+}
+.hotel__box{
+    display: flex;
+    gap: 100px;
+}
+.hotel__box-descr-text{
+    margin-bottom: 30px;
+}
+.hotel__box-descr-list{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 50px;
+    column-gap: 38px;
+    
+    margin-top: 80px;
+}

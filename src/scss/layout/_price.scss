@@ -1,0 +1,35 @@
+.price__title{
+    margin-bottom: 100px;
+    & span{
+        left: 120px;
+    }
+}
+.price__box{
+    position: relative;
+    display: flex;
+    gap: 70px;
+    &-descr{
+        width: 530px;
+    }
+    &-title{
+        margin-bottom: 50px;
+        font-size: 24px;
+        line-height: 28px;
+    }
+}
+.price__box-list-item:not(:last-child){
+    margin-bottom: 20px;
+}
+.price__backroung-img{
+    position: absolute;
+    right: 0;
+    top: -120px;
+    width: 325px;
+    height: 445px;
+    // border: 1px solid red;
+    background-image: url('../../img/icons-aerostat.svg'),
+    url('../../img/icons-aerostat.svg'), url('../../img/icons-aerostat.svg');
+    background-repeat: no-repeat;
+    background-size: 206px 305px, 73px 108px, 73px 108px;
+    background-position: 115px 0px, 30px 190px, 95px 335px;
+}

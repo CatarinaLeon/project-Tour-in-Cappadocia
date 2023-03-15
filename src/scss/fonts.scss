@@ -1,21 +1,21 @@
 @font-face{
-	font-family: gilroy;
+	font-family: 'Balqis';
 	font-display: swap;
-	src: url("../fonts/gilroy-regular.woff2") format("woff2"), url("../fonts/gilroy-regular.woff") format("woff");
+	src: url("../fonts/Balqis.woff2") format("woff2"), url("../fonts/Balqis.woff") format("woff");
 	font-weight: 400;
 	font-style: normal;
 }
 @font-face{
-	font-family: nunito;
+	font-family: 'Roboto Condensed';
 	font-display: swap;
-	src: url("../fonts/nunito-regular.woff2") format("woff2"), url("../fonts/nunito-regular.woff") format("woff");
+	src: url("../fonts/RobotoCondensed.woff2") format("woff2"), url("../fonts/RobotoCondensed.woff") format("woff");
 	font-weight: 400;
 	font-style: normal;
 }
 @font-face{
-	font-family: mon;
+	font-family: 'Roboto Condensed';
 	font-display: swap;
-	src: url("../fonts/mon-amour-regular.woff2") format("woff2"), url("../fonts/mon-amour-regular.woff") format("woff");
+	src: url("../fonts/RobotoCondensed-Italic.woff2") format("woff2"), url("../fonts/RobotoCondensed-Italic.woff") format("woff");
 	font-weight: 400;
-	font-style: normal;
+	font-style: italic;
 }

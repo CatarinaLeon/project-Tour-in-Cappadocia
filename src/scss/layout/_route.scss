@@ -1,0 +1,25 @@
+.container__route{
+    display: flex;
+}
+.route__box{
+    width: 600px;
+    &-title{
+        margin-bottom: 100px;
+    }
+    &-title span{
+        left: 240px;
+    }
+    &-text{
+        margin-bottom: 20px;
+    }
+    &-list{
+        margin-bottom: 50px;
+    }
+}
+.route-text{
+    font-size: 24px;
+    line-height: 28px;
+}
+.slider{
+    width: 570px;
+}

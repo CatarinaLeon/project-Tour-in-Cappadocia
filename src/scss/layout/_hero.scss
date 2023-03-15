@@ -1,0 +1,44 @@
+.section__hero{
+    padding-top: 250px;
+    height: 1080px;
+    background-image: url('../../img/Hero/Hero-1x.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.hero__title{
+    font-size: 90px;
+    line-height: 170px;
+    text-align: center;
+    position: relative;
+    @media screen and (min-width: 768px) {
+        font-size: 170px;
+        line-height: 250px;
+    }
+    @media screen and (min-width: 1200px) {
+        font-size: 250px;
+        line-height: 334px;
+    }
+    
+}
+.hero__text{
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 36px;
+    @media screen and (min-width: 768px) {
+        font-size: 40px;
+        line-height: 50px;
+        bottom: 10px;
+        right: 20px
+    }
+    @media screen and (min-width: 1200px) {
+        font-size: 56px;
+        line-height: 66px;
+        bottom: 0;
+        right: 90px;
+    }
+}

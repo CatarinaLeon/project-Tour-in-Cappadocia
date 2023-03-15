@@ -1,5 +1,5 @@
 {
-  "name": "project-maheev",
+  "name": "project-tour-in-cappadocia",
   "version": "1.0.0",
   "description": "",
   "main": "gulpfile.js",
@@ -11,7 +11,7 @@
     "deploy": "gulp deployFTP --build",
     "svgSprite": "gulp svgSprite"
   },
-  "author": "",
+  "author": "CatarinaLeon",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.27.10",
