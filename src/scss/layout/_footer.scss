@@ -1,38 +1,44 @@
 .footer{
-    padding: 40px 0;
-}
-.footer__logo{
-    display: block;
-    width: 140px;
-    margin: 0 auto 16px auto;
-}
-.logo-icon{
-    width: 140px;
-    height: 45px;
-}
-.footer__text{
-    font-weight: 400;
-    font-size: 16px;
-    line-height: calc(22/16) ;
-    
-    text-align: center;
-
-    color: var(--accent-color);
-}
-@media screen and (min-width: 1200px) {
-    .footer {
-        padding: 50px 0;
+    height: 1180px;
+    background-image: url('../../img/Contacts/Contacts-1x.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    &__container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 140px;
     }
-    .footer__logo {
-        width: 257px;
-        margin: 0 auto 30px auto;
+}
+.footer__contacts{
+    position: relative;
+    &-box{
+        position: absolute;
+        top: 75px;
+        text-align: center;
+        &-title{
+            font-weight: 300;
+            font-size: 86px;
+            line-height: 115px;
+            margin-bottom: 30px;
+        }
+        &-link{
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            font-size: 18px;
+            line-height: 21px;
+            color: inherit;
+        }
+        &-link svg{
+            fill: var(--accent-color);
+        }
     }
-    .footer__logo-icon {
-        width: 257px;
-        height: 83px;
-    }
-    .footer__text {
-        font-size: 18px;
-        line-height: calc(25/18);
-    }
+}
+.footer__contacts-text{
+    font-family: 'Balqis';
+    font-size: 86px;
+    line-height: 115px;
 }
