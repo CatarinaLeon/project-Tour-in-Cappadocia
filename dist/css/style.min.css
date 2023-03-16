@@ -90,7 +90,8 @@ img {
   width: 280px;
   padding: 12px;
   font-size: 24px;
-  line-height: 1.1666666667;
+  line-height: 1.17;
+  text-transform: uppercase;
   background-color: inherit;
   border: 1px solid var(--accent-color);
   cursor: pointer;
@@ -117,12 +118,12 @@ img {
 
 .text {
   font-size: 18px;
-  line-height: 21px;
+  line-height: 1.17;
 }
 
 .list-text {
   font-size: 24px;
-  line-height: 28px;
+  line-height: 1.17;
 }
 
 .mob-menu {
@@ -296,7 +297,7 @@ img {
 
 .nav__list-link:focus,
 .nav__list-link:hover {
-  border-bottom: 2px solid #000;
+  border-bottom: 2px solid var(--main-text-color);
 }
 
 .section__hero {
@@ -326,7 +327,6 @@ img {
 }
 
 .wonderland__title {
-  position: relative;
   margin-bottom: 100px;
 }
 
@@ -347,14 +347,14 @@ img {
   padding: 45px 0 45px 55px;
 }
 
-.descr__text {
+.descr__text,
+.descr__list,
+.descr__list li:nth-child(5) {
   margin-bottom: 50px;
 }
 
 .descr__title {
   margin-bottom: 50px;
-  font-size: 18px;
-  line-height: 21px;
 }
 
 .hotel__title {
@@ -368,6 +368,11 @@ img {
 .hotel__box {
   display: flex;
   gap: 100px;
+}
+
+.hotel__box-img {
+  width: 500px;
+  height: 700px;
 }
 
 .hotel__box-descr-text {
@@ -406,8 +411,6 @@ img {
 
 .list-item__title {
   margin-bottom: 50px;
-  font-size: 24px;
-  line-height: 28px;
 }
 
 .list-item__list li:not(:last-child) {
@@ -446,7 +449,7 @@ img {
   width: 383px;
   padding: 15px 30px;
   margin-bottom: 20px;
-  border: 1px solid #E2AB3F;
+  border: 1px solid var(--accent-color);
 }
 
 .list-request-item-btn {

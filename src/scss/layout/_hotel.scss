@@ -7,6 +7,10 @@
 .hotel__box{
     display: flex;
     gap: 100px;
+    &-img{
+    width: 500px;
+    height: 700px;
+}
 }
 .hotel__box-descr-text{
     margin-bottom: 30px;

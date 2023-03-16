@@ -22,8 +22,6 @@
 }
 .list-item__title{
     margin-bottom: 50px;
-        font-size: 24px;
-        line-height: 28px;
 }
 .list-item__list li:not(:last-child){
     margin-bottom: 20px;
@@ -55,7 +53,7 @@
         width: 383px;
         padding: 15px 30px;
         margin-bottom: 20px;
-        border: 1px solid #E2AB3F;
+        border: 1px solid var(--accent-color);
     }
     &-btn{
         display: block;
