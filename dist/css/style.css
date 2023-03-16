@@ -630,8 +630,7 @@ button {
   }
 
   .hotel__box-img {
-    width: 500px;
-    height: 700px;
+    height: 690px;
   }
 
   .hotel__box-descr-text {
@@ -896,6 +895,8 @@ button {
 
   .hotel__box-img {
     margin-bottom: 0;
+    width: 500px;
+    height: 700px;
   }
 
   .hotel__box-descr-list {

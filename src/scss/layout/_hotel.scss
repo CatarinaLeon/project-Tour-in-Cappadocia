@@ -30,9 +30,7 @@
 }
 .hotel__box{
     &-img{
-        width: 500px;
-        height: 700px;
-        // height: 991px;
+        height: 690px;
     }
     &-descr-text{
         margin-bottom: 30px;
@@ -57,8 +55,8 @@
     gap: 100px;
         &-img{
             margin-bottom: 0;
-            // width: 500px;
-            // height: 700px;
+            width: 500px;
+            height: 700px;
         }
         &-descr-list{
             row-gap: 50px;
