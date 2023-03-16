@@ -1,55 +1,100 @@
 .footer{
-    height: 1180px;
+    height: 480px;
     background-image: url('../../img/Contacts/Contacts-1x.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    &__container{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 140px;
-    }
 }
 .footer__contacts{
-    position: relative;
-    &-box{
-        position: absolute;
-        top: 75px;
-        text-align: center;
+    width: 235px;
+    height: 350px;
+    padding-top: 35px;
+    background-image: url('../../img/Contacts/Contacts-aerostat-1x.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto 25px auto;
+    text-align: center;
         &-title{
             font-weight: 300;
+            font-size: 48px;
+            line-height: 50px;
+            margin-bottom: 20px;
+        }
+        &-link{
+            margin-bottom: 10px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            font-size: 16px;
+            line-height: 19px;
+            color: inherit;
+        }
+        &-link svg{
+            width: 20px;
+            height: 15px;
+            fill: var(--accent-color);
+        }
+        &-list{
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        &-item-link{
+            display: flex;
+            align-items: center;
+        }
+        &-item-link svg{
+            width: 20px;
+            height: 20px;
+        }
+}
+.footer__contacts-img{
+    width: 250px;
+    height: 340px;
+}
+.footer__contacts-text{
+    font-family: 'Balqis';
+    font-size: 48px;
+    line-height: 50px;
+    text-align: center;
+}
+@media screen and (min-width: 1260px) {
+    .footer {
+        height: 1180px;
+            &__container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 140px;
+            }
+        }
+    .footer__contacts{
+        width: 356px;
+        height: 527px;
+        padding-top: 55px;
+        &-title{
             font-size: 86px;
             line-height: 115px;
             margin-bottom: 30px;
         }
         &-link{
             margin-bottom: 20px;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
             gap: 10px;
             font-size: 18px;
             line-height: 21px;
-            color: inherit;
-        }
-        &-link svg{
-            fill: var(--accent-color);
         }
         &-list{
-            display: flex;
-            align-items: center;
-            justify-content: center;
             gap: 15px;
         }
-        &-item{
-            width: 30px;
-            height: 30px;
+        &-item-link svg{
+        width: 30px;
+        height: 30px;
         }
-    }
 }
 .footer__contacts-text{
-    font-family: 'Balqis';
     font-size: 86px;
     line-height: 115px;
+    text-align: left;
+}
 }

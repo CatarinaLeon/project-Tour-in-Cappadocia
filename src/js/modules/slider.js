@@ -16,30 +16,30 @@ $('.container__slider').slick({
 	initialSlide:0,
 	// Автоматическая адаптивная высота слайдера => adaptiveHeight
 	adaptiveHeight: true,
-	responsive: [
-		{
-				breakpoint: 1200,
-				settings: {
-					slidesToShow: 2,
-					slidesToScroll: 2,
-				}
-			},
-			{
-				breakpoint: 768,
-				settings: {
-					slidesToShow: 2,
-					slidesToScroll: 2,
-				}
-			},
-			{
-				breakpoint: 480,
-				settings: {
-					dots: false,
-					slidesToShow: 1,
-					slidesToScroll: 1,
-				}
-			}
-	],
+	// responsive: [
+	// 	{
+	// 			breakpoint: 1200,
+	// 			settings: {
+	// 				slidesToShow: 2,
+	// 				slidesToScroll: 2,
+	// 			}
+	// 		},
+	// 		{
+	// 			breakpoint: 768,
+	// 			settings: {
+	// 				slidesToShow: 2,
+	// 				slidesToScroll: 2,
+	// 			}
+	// 		},
+	// 		{
+	// 			breakpoint: 480,
+	// 			settings: {
+	// 				dots: false,
+	// 				slidesToShow: 1,
+	// 				slidesToScroll: 1,
+	// 			}
+	// 		}
+	// ],
 	// mobileFirst:false,
 	// автоматичеая прокрутка слайдов => autoplay по умол false
 	// autoplay: false,
