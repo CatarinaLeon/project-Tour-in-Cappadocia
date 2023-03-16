@@ -1,17 +1,9 @@
 // @import '../../../node_modules/slick-carousel/slick/slick.scss';
 
-.products__slider{
+.container__slider{
     position: relative;
-    padding: 0 60px;
 }
-.products__slider-img{
-    width: 140px;
-    height: 265px;
-    @media screen and (min-width: 1200px) {
-            width: 238px;
-            height: 450px;
-        }
-}
+
 /* Ограничивающая оболочка */
 .slick-list {
     overflow: hidden;
@@ -32,64 +24,70 @@
             justify-content: center;
         }
 }
-
+.slick-dots{
+    display: flex;
+    gap: 25px;
+}
 .slick-dots li {
     list-style: none;
     @media screen and (min-width: 1200px) {
-        &:not(:last-child){
-            margin-right: 20px;
-        }
+        display: flex;
+        align-items: center;
         }
 }
 
 /* Активная точка */
 .slick-dots li.slick-active button {
-    background: #E25E5E;
+    background-color: var(--accent-color);
+    
 }
 
 /* Элемент точки */
 .slick-dots li button {
-    border: 1px solid #E25E5E;
+    width: 20px;
+    height: 20px;
     font-size: 0;
-    width: 10px;
-    height: 14px;
-    background-color: #fff;
+    line-height: 0;
     border-radius: 50%;
+    border: 1px solid var(--accent-color);
+    background-color: #fff;
 }
 
-.products__slider .slick-slide{
+.container__slider .slick-slide{
     display: flex;
     justify-content: center;
 }
-
-.products__slider .slick-arrow{
-    padding: 0;
-    position: absolute;
-    top: 50%;
-    margin: -25px 0 0 0;
-    z-index: 5;
-    font-size: 0;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    border: none;
-    background: #E25E5E;
-}
-.products__slider .slick-arrow.slick-disabled{
-    background-color: #c9c8c8;
-}
-.products__slider .slick-arrow.slick-prev{
-    background-image: url('../../img/Vector.svg');
-    background-repeat: no-repeat;
-    background-position: 43%, 50%;
-    left: 0;
-}
-.products__slider .slick-arrow.slick-next{
-    background-image: url('../../img/Vector-prev.svg');
-    background-repeat: no-repeat;
-    background-position: 53%, 50%;
-    right: 0;
-}
+// ================================================================
+// Кнопка стрелка
+// .container__slider .slick-arrow{
+//     padding: 0;
+//     position: absolute;
+//     top: 50%;
+//     margin: -25px 0 0 0;
+//     z-index: 5;
+//     font-size: 0;
+//     width: 50px;
+//     height: 50px;
+//     border-radius: 50%;
+//     border: none;
+//     background: transparent;
+// }
+// .container__slider .slick-arrow.slick-disabled{
+//     display: none;
+//     // background-color: #c9c8c8;
+// }
+// .container__slider .slick-arrow.slick-prev{
+//     background-image: url('../../img/icon-arrow-left.svg');
+//     background-repeat: no-repeat;
+//     background-position: 43%, 50%;
+//     left: 0;
+// }
+// .container__slider .slick-arrow.slick-next{
+//     background-image: url('../../img/icon-arrow.svg');
+//     background-repeat: no-repeat;
+//     background-position: 53%, 50%;
+//     right: 0;
+// }
 // ++++++++++++++++++++++++++++++++++++++++++++++++
 
 // Шпаргалка имён класcов

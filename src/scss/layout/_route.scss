@@ -1,10 +1,12 @@
 .container__route{
     display: flex;
+    justify-content: flex-start;
+    position: relative;
 }
 .route__box{
     width: 600px;
     &-title{
-        margin-bottom: 100px;
+        margin-bottom: 83px;
     }
     &-title span{
         left: 240px;
@@ -16,6 +18,18 @@
         }
     }
 }
-.slider{
-    width: 570px;
+.route__slider {
+    position: absolute;
+    right: -345px;
+    width: 960px;
+}
+.route__slider ul{
+    transform: rotate(-90deg);
+    position: absolute;
+    bottom: 50%;
+    left: -10%;
+}
+.route__slider-item-img {
+    width: 960px;
+    height: 1095px;
 }

@@ -6,10 +6,10 @@
 }
 .wonderland__container{
     display: flex;
+    justify-content: flex-end;
+    position: relative;
 }
-.container__slider{
-    width: 570px;
-}
+
 .container__descr{
     width: 600px;
     padding: 45px 0 45px 55px;
@@ -21,4 +21,23 @@
 }
 .descr__title{
     margin-bottom: 50px;
+}
+.wonderland__slider{
+    position: absolute;
+    left: -360px;
+    width: 960px;
+}
+.wonderland__slider ul {
+    transform: rotate(-90deg);
+    position: absolute;
+    bottom: 50%;
+    right: -1%;
+}
+.wonderland__slider-item-img {
+    // width: 140px;
+    // height: 265px;
+    @media screen and (min-width: 1200px) {
+        width: 960px;
+        height: 700px;
+    }
 }
