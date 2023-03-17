@@ -1,8 +1,8 @@
 .wonderland__title {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 .wonderland__title span {
-    left: 130px;
+    left: 110px;
 }
 .container__descr {
     margin-bottom: 30px;
@@ -20,7 +20,19 @@
 }
 .wonderland__slider-item-img {
     width: 100%;
+    height: auto;
+}
+
+@media screen and (min-width: 480px) {
+.wonderland__title span {
+    left: 130px;
+}
+.wonderland__title {
+    margin-bottom: 30px;
+}
+.wonderland__slider-item-img {
     height: 305px;
+}
 }
 
 @media screen and (min-width: 768px) {
@@ -75,7 +87,7 @@
     width: 960px;
 }
 .wonderland__slider ul {
-    transform: rotate(-90deg);
+    transform: rotate(90deg);
     position: absolute;
     bottom: 50%;
     right: -1%;

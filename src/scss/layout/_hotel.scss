@@ -1,13 +1,13 @@
 .hotel__title{
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     & span{
         left: 60px;
     }
 }
 .hotel__box{
     &-img{
-        margin-bottom: 30px;
-        height: 585px;
+        margin-bottom: 20px;
+        height: auto;
     }
     &-descr-text{
         margin-bottom: 20px;
@@ -17,8 +17,22 @@
         flex-wrap: wrap;
         justify-content: center;
         row-gap: 20px;
+        margin-top: 20px;
+    }
+}
+@media screen and (min-width: 480px) {
+.hotel__title {
+        margin-bottom: 30px;
+    }
+.hotel__box {
+    &-img {
+        margin-bottom: 30px;
+        height: 585px;
+    }
+    &-descr-list {
         margin-top: 40px;
     }
+}
 }
 
 @media screen and (min-width: 768px) {

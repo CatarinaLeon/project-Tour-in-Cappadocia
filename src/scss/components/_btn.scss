@@ -1,8 +1,8 @@
 .btn {
-  width: 240px;
+  width: 190px;
   padding: 10px;
-  font-size: 20px;
-  line-height: 1.2;
+  font-size: 16px;
+  line-height: 1.25;
   text-transform: uppercase;
   background-color: inherit;
   border: 1px solid var(--accent-color);
@@ -11,6 +11,13 @@
   &:hover,
   &:focus {
     @extend %transition;
+  }
+}
+@media screen and (min-width: 480px) {
+  .btn{
+    width: 240px;
+    font-size: 20px;
+    line-height: 1.2;
   }
 }
 @media screen and (min-width:1260px) {

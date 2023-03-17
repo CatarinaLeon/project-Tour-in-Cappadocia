@@ -1,15 +1,21 @@
 .footer{
     height: 480px;
+    position: relative;
     background-image: url('../../img/Contacts/Contacts-1x.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+            background-image: url('../../img/Contacts/Contacts-2x.jpg');
+        }
 }
 .footer__contacts{
     width: 235px;
     height: 350px;
     padding-top: 35px;
-    background-image: url('../../img/Contacts/Contacts-aerostat-1x.png');
+    background-image: url('../../img/SVG/icon-aerostat.svg');
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0 auto 25px auto;
@@ -17,7 +23,7 @@
         &-title{
             font-weight: 300;
             font-size: 48px;
-            line-height: 50px;
+            line-height: 1.04;
             margin-bottom: 20px;
         }
         &-link{
@@ -27,7 +33,7 @@
             justify-content: center;
             gap: 5px;
             font-size: 16px;
-            line-height: 19px;
+            line-height: 1.19;
             color: inherit;
         }
         &-link svg{
@@ -55,10 +61,37 @@
 }
 .footer__contacts-text{
     font-family: 'Balqis';
-    font-size: 48px;
-    line-height: 50px;
+    font-size: 34px;
+    line-height: 1.06;
     text-align: center;
 }
+.footer__contacts-developer{
+    position: absolute;
+    bottom: 3%;
+    & a{
+        font-family: 'Balqis';
+        font-weight: 700;
+        color: #000;
+        margin-left: 5px;
+    }
+}
+@media screen and (min-width: 480px) {
+.footer__contacts-developer{
+        left: 50%;
+        transform: translate(-50%, 0%);
+}
+.footer__contacts-text {
+    font-size: 48px;
+    line-height: 1.04;
+}
+}
+
+@media screen and (min-width: 768px) {
+.footer {
+    height: 600px;
+}
+}
+
 @media screen and (min-width: 1260px) {
     .footer {
         height: 1180px;
@@ -75,14 +108,14 @@
         padding-top: 55px;
         &-title{
             font-size: 86px;
-            line-height: 115px;
+            line-height: 1.34;
             margin-bottom: 30px;
         }
         &-link{
             margin-bottom: 20px;
             gap: 10px;
             font-size: 18px;
-            line-height: 21px;
+            line-height: 1.17;
         }
         &-list{
             gap: 15px;
@@ -91,10 +124,14 @@
         width: 30px;
         height: 30px;
         }
+        &-link svg{
+        width: 25px;
+        height: 25px;
+        }
 }
 .footer__contacts-text{
     font-size: 86px;
-    line-height: 115px;
+    line-height: 1.34;
     text-align: left;
 }
 }

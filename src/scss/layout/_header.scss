@@ -5,14 +5,16 @@
     left: 50%;
     transform: translate(-50%, 0%);
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
+    gap: 10px;
     &__link{
         display: flex;
         align-items: center;
         gap: 5px;
         font-size: 16px;
-        line-height: 20px;
+        line-height: 1.25;
         color: inherit;
     }
 }
@@ -22,10 +24,11 @@
     gap:20px;
     &-link{
         font-size: 16px;
-        line-height: 20px;
+        line-height: 1.25;
         color: inherit;
     }
 }
+
 @media screen and (min-width: 1260px) {
 .header{
     max-width: 1170px;
@@ -34,7 +37,7 @@
     &__link{
         gap: 10px;
         font-size: 24px;
-        line-height: 28px;
+        line-height: 1.17;
     }
     &__link svg{
         width: 30px;
@@ -45,7 +48,7 @@
     gap: 52px;
     &-link{
         font-size: 24px;
-        line-height: 28px;
+        line-height: 1.17;
         &:focus,
         &:hover{
             border-bottom: 2px solid var(--main-text-color);

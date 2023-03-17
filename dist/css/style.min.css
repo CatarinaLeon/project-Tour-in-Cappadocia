@@ -91,10 +91,10 @@ button {
 }
 
 .btn {
-  width: 240px;
+  width: 190px;
   padding: 10px;
-  font-size: 20px;
-  line-height: 1.2;
+  font-size: 16px;
+  line-height: 1.25;
   text-transform: uppercase;
   background-color: inherit;
   border: 1px solid var(--accent-color);
@@ -104,9 +104,9 @@ button {
 
 .title {
   position: relative;
-  font-size: 56px;
-  line-height: 88px;
-  color: #E2AB3F;
+  font-size: 50px;
+  line-height: 1.32;
+  color: var(--accent-color);
 }
 
 .title span {
@@ -115,9 +115,9 @@ button {
   font-family: "Roboto Condensed";
   font-style: italic;
   font-weight: 300;
-  font-size: 16px;
-  line-height: 1.25;
-  color: #000000;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--main-text-color);
 }
 
 .text {
@@ -174,12 +174,8 @@ button {
 }
 
 .section {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
-.container__slider {
-  position: relative;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 /* Ограничивающая оболочка */
@@ -242,8 +238,10 @@ button {
   left: 50%;
   transform: translate(-50%, 0%);
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
+  gap: 10px;
 }
 
 .header__link {
@@ -251,7 +249,7 @@ button {
   align-items: center;
   gap: 5px;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 1.25;
   color: inherit;
 }
 
@@ -263,12 +261,12 @@ button {
 
 .nav__list-link {
   font-size: 16px;
-  line-height: 20px;
+  line-height: 1.25;
   color: inherit;
 }
 
 .section__hero {
-  padding-top: 100px;
+  padding-top: 130px;
   height: 400px;
   background-image: url("../../img/Hero/Hero-1x.jpg");
   background-repeat: no-repeat;
@@ -277,28 +275,28 @@ button {
 }
 
 .hero__title {
-  font-size: 90px;
-  line-height: 170px;
+  font-size: 60px;
+  line-height: 80px;
   text-align: center;
   position: relative;
 }
 
 .hero__text {
   position: absolute;
-  bottom: 20px;
-  right: 30px;
-  font-style: italic;
+  bottom: -5px;
+  right: 5px;
   font-weight: 300;
-  font-size: 26px;
-  line-height: 36px;
+  font-style: italic;
+  font-size: 20px;
+  line-height: 1.2;
 }
 
 .wonderland__title {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .wonderland__title span {
-  left: 130px;
+  left: 110px;
 }
 
 .container__descr {
@@ -321,11 +319,11 @@ button {
 
 .wonderland__slider-item-img {
   width: 100%;
-  height: 305px;
+  height: auto;
 }
 
 .hotel__title {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .hotel__title span {
@@ -333,8 +331,8 @@ button {
 }
 
 .hotel__box-img {
-  margin-bottom: 30px;
-  height: 585px;
+  margin-bottom: 20px;
+  height: auto;
 }
 
 .hotel__box-descr-text {
@@ -346,34 +344,34 @@ button {
   flex-wrap: wrap;
   justify-content: center;
   row-gap: 20px;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .section__price {
-  padding-bottom: 60px;
+  padding-bottom: 40px;
 }
 
 .price__title {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .price__title span {
-  left: 70px;
+  left: 15%;
 }
 
 .price__services {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 20px;
   margin-bottom: 20px;
 }
 
 .price__services-title {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .price__services__list li:not(:last-child) {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .price__request {
@@ -385,12 +383,12 @@ button {
 }
 
 .price__request-item-title span {
-  bottom: 0px;
-  left: 210px;
+  bottom: -3px;
+  left: 47%;
 }
 
 .price__request-form {
-  margin: 30px 0;
+  margin: 20px 0;
 }
 
 .price__request-form-title {
@@ -398,7 +396,7 @@ button {
 }
 
 .price__request-form-input {
-  width: 383px;
+  width: 250px;
   padding: 15px 30px;
   margin-bottom: 20px;
   border: 1px solid var(--accent-color);
@@ -409,16 +407,20 @@ button {
   margin: 0 auto;
 }
 
+.price__request-item img {
+  height: auto;
+}
+
 .route__box {
   margin-bottom: 30px;
 }
 
 .route__box-title {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 .route__box-title span {
-  left: 140px;
+  left: 125px;
 }
 
 .route__box-list {
@@ -442,11 +444,12 @@ button {
 
 .route__slider-item-img {
   width: 100%;
-  height: 510px;
+  height: auto;
 }
 
 .footer {
   height: 480px;
+  position: relative;
   background-image: url("../../img/Contacts/Contacts-1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -457,7 +460,7 @@ button {
   width: 235px;
   height: 350px;
   padding-top: 35px;
-  background-image: url("../../img/Contacts/Contacts-aerostat-1x.png");
+  background-image: url("../../img/SVG/icon-aerostat.svg");
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0 auto 25px auto;
@@ -467,7 +470,7 @@ button {
 .footer__contacts-title {
   font-weight: 300;
   font-size: 48px;
-  line-height: 50px;
+  line-height: 1.04;
   margin-bottom: 20px;
 }
 
@@ -478,7 +481,7 @@ button {
   justify-content: center;
   gap: 5px;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.19;
   color: inherit;
 }
 
@@ -511,9 +514,21 @@ button {
 
 .footer__contacts-text {
   font-family: "Balqis";
-  font-size: 48px;
-  line-height: 50px;
+  font-size: 34px;
+  line-height: 1.06;
   text-align: center;
+}
+
+.footer__contacts-developer {
+  position: absolute;
+  bottom: 3%;
+}
+
+.footer__contacts-developer a {
+  font-family: "Balqis";
+  font-weight: 700;
+  color: #000;
+  margin-left: 5px;
 }
 
 :root {
@@ -550,6 +565,110 @@ button {
   .container {
     max-width: 448px;
   }
+
+  .btn {
+    width: 240px;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .title {
+    font-size: 56px;
+    line-height: 1.57;
+  }
+
+  .title span {
+    bottom: 0;
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
+  .hero__title {
+    font-size: 90px;
+    line-height: 1.33;
+  }
+
+  .hero__text {
+    bottom: -5px;
+    right: 30px;
+    font-size: 26px;
+    line-height: 1.38;
+  }
+
+  .wonderland__title span {
+    left: 130px;
+  }
+
+  .wonderland__title {
+    margin-bottom: 30px;
+  }
+
+  .wonderland__slider-item-img {
+    height: 305px;
+  }
+
+  .hotel__title {
+    margin-bottom: 30px;
+  }
+
+  .hotel__box-img {
+    margin-bottom: 30px;
+    height: 585px;
+  }
+
+  .hotel__box-descr-list {
+    margin-top: 40px;
+  }
+
+  .section__price {
+    padding-bottom: 60px;
+  }
+
+  .price__title {
+    margin-bottom: 30px;
+  }
+
+  .price__services {
+    gap: 30px;
+  }
+
+  .price__services-title {
+    margin-bottom: 20px;
+  }
+
+  .price__services__list li:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  .price__request-form {
+    margin: 30px 0;
+  }
+
+  .price__request-form-input {
+    width: 383px;
+  }
+
+  .route__box-title {
+    margin-bottom: 30px;
+  }
+
+  .route__box-title span {
+    left: 140px;
+  }
+
+  .route__slider-item-img {
+    height: 510px;
+  }
+
+  .footer__contacts-developer {
+    left: 50%;
+    transform: translate(-50%, 0%);
+  }
+
+  .footer__contacts-text {
+    font-size: 48px;
+    line-height: 1.04;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -559,7 +678,7 @@ button {
 
   .title {
     font-size: 76px;
-    line-height: 108px;
+    line-height: 1.3;
   }
 
   .title span {
@@ -578,23 +697,28 @@ button {
   }
 
   .section {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .section {
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 
   .section__hero {
-    padding-top: 150px;
-    height: 680px;
+    padding-top: 120px;
+    height: 600px;
   }
 
   .hero__title {
     font-size: 170px;
-    line-height: 250px;
+    line-height: 1.35;
   }
 
   .hero__text {
     font-size: 40px;
-    line-height: 50px;
+    line-height: 1.25;
     bottom: 10px;
     right: 20px;
   }
@@ -655,10 +779,6 @@ button {
     margin-bottom: 50px;
   }
 
-  .price__title span {
-    left: 100px;
-  }
-
   .price__services {
     margin-bottom: 30px;
   }
@@ -684,10 +804,6 @@ button {
     width: 354px;
   }
 
-  .price__request-item-title span {
-    left: 160px;
-  }
-
   .price__request-form {
     margin: 25px 0 0 0;
   }
@@ -702,7 +818,7 @@ button {
     top: 110px;
     width: 325px;
     height: 445px;
-    background-image: url("../../img/Price/icons-aerostat.svg"), url("../../img/Price/icons-aerostat.svg"), url("../../img/Price/icons-aerostat.svg");
+    background-image: url("../../img/SVG/icon-aerostat-price.svg"), url("../../img/SVG/icon-aerostat-price.svg"), url("../../img/SVG/icon-aerostat-price.svg");
     background-repeat: no-repeat;
     background-size: 206px 305px, 73px 108px, 73px 108px;
     background-position: 115px 0px, 30px 190px, 95px 335px;
@@ -727,6 +843,10 @@ button {
   .route__slider-item-img {
     height: 808px;
   }
+
+  .footer {
+    height: 600px;
+  }
 }
 
 @media screen and (min-width: 1200) {
@@ -737,8 +857,8 @@ button {
 
 @media screen and (min-width: 1200px) {
   .section {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 70px;
+    padding-bottom: 70px;
   }
 }
 
@@ -756,12 +876,12 @@ button {
 
   .title {
     font-size: 96px;
-    line-height: 128px;
+    line-height: 1.33;
   }
 
   .title span {
     font-size: 24px;
-    line-height: 28px;
+    line-height: 1.17;
   }
 
   .text {
@@ -793,7 +913,7 @@ button {
   .header__link {
     gap: 10px;
     font-size: 24px;
-    line-height: 28px;
+    line-height: 1.17;
   }
 
   .header__link svg {
@@ -807,7 +927,7 @@ button {
 
   .nav__list-link {
     font-size: 24px;
-    line-height: 28px;
+    line-height: 1.17;
   }
 
   .nav__list-link:focus,
@@ -817,17 +937,17 @@ button {
 
   .section__hero {
     padding-top: 250px;
-    height: 1080px;
+    height: 1000px;
   }
 
   .hero__title {
     font-size: 250px;
-    line-height: 334px;
+    line-height: 1.34;
   }
 
   .hero__text {
     font-size: 56px;
-    line-height: 66px;
+    line-height: 1.18;
     bottom: 0;
     right: 90px;
   }
@@ -869,7 +989,7 @@ button {
   }
 
   .wonderland__slider ul {
-    transform: rotate(-90deg);
+    transform: rotate(90deg);
     position: absolute;
     bottom: 50%;
     right: -1%;
@@ -906,7 +1026,7 @@ button {
   }
 
   .section__price {
-    padding-bottom: 200px;
+    padding-bottom: 140px;
   }
 
   .price__title {
@@ -914,7 +1034,7 @@ button {
   }
 
   .price__title span {
-    left: 120px;
+    left: 12%;
   }
 
   .price__services {
@@ -939,16 +1059,12 @@ button {
   }
 
   .price__request-item:first-child {
-    padding-top: 105px;
+    padding-top: 75px;
     width: 600px;
   }
 
   .price__request-item-title {
     margin-bottom: 20px;
-  }
-
-  .price__request-item-title span {
-    left: 300px;
   }
 
   .price__request-form {
@@ -998,7 +1114,7 @@ button {
   }
 
   .route__slider ul {
-    transform: rotate(-90deg);
+    transform: rotate(90deg);
     position: absolute;
     bottom: 50%;
     left: -10%;
@@ -1028,7 +1144,7 @@ button {
 
   .footer__contacts-title {
     font-size: 86px;
-    line-height: 115px;
+    line-height: 1.34;
     margin-bottom: 30px;
   }
 
@@ -1036,7 +1152,7 @@ button {
     margin-bottom: 20px;
     gap: 10px;
     font-size: 18px;
-    line-height: 21px;
+    line-height: 1.17;
   }
 
   .footer__contacts-list {
@@ -1048,9 +1164,24 @@ button {
     height: 30px;
   }
 
+  .footer__contacts-link svg {
+    width: 25px;
+    height: 25px;
+  }
+
   .footer__contacts-text {
     font-size: 86px;
-    line-height: 115px;
+    line-height: 1.34;
     text-align: left;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .section__hero {
+    background-image: url("../../img/Hero/Hero-2x.jpg");
+  }
+
+  .footer {
+    background-image: url("../../img/Contacts/Contacts-2x.jpg");
   }
 }

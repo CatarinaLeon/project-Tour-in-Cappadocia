@@ -1,8 +1,6 @@
-// @import '../../../node_modules/slick-carousel/slick/slick.scss';
-
-.container__slider{
-    position: relative;
-}
+// .container__slider{
+//     position: relative;
+// }
 
 /* Ограничивающая оболочка */
 .slick-list {
@@ -58,90 +56,3 @@
     display: flex;
     justify-content: center;
 }
-// ================================================================
-// Кнопка стрелка
-// .container__slider .slick-arrow{
-//     padding: 0;
-//     position: absolute;
-//     top: 50%;
-//     margin: -25px 0 0 0;
-//     z-index: 5;
-//     font-size: 0;
-//     width: 50px;
-//     height: 50px;
-//     border-radius: 50%;
-//     border: none;
-//     background: transparent;
-// }
-// .container__slider .slick-arrow.slick-disabled{
-//     display: none;
-//     // background-color: #c9c8c8;
-// }
-// .container__slider .slick-arrow.slick-prev{
-//     background-image: url('../../img/icon-arrow-left.svg');
-//     background-repeat: no-repeat;
-//     background-position: 43%, 50%;
-//     left: 0;
-// }
-// .container__slider .slick-arrow.slick-next{
-//     background-image: url('../../img/icon-arrow.svg');
-//     background-repeat: no-repeat;
-//     background-position: 53%, 50%;
-//     right: 0;
-// }
-// ++++++++++++++++++++++++++++++++++++++++++++++++
-
-// Шпаргалка имён класcов
-
-// /* Слайдер */
-// .slick-slider {}
-
-// /* Слайдер запущен */
-// .slick-slider.slick-initialized {}
-
-// /* Слайдер с точками */
-// .slick-slider.slick-dotted {}
-
-// /* Ограничивающая оболочка */
-// .slick-list {}
-
-// /* Лента слайдов */
-// .slick-track {}
-
-// /* Слайд */
-// .slick-slide {}
-
-// /* Слайд активный (показывается) */
-// .slick-slide.slick-active {}
-
-// /* Слайд основной */
-// .slick-slide.slick-current {}
-
-// /* Слайд по центру */
-// .slick-slide.slick-center {}
-
-// /* Клонированный слайд */
-// .slick-slide.slick-cloned {}
-
-// /* Стрелка */
-// .slick-arrow {}
-
-// /* Стрелка влево */
-// .slick-arrow.slick-prev {}
-
-// /* Стрелка вправо */
-// .slick-arrow.slick-next {}
-
-// /* Стрелка не активная */
-// .slick-arrow.slick-disabled {}
-
-// /* Точки (булиты) */
-// .slick-dots {}
-
-// .slick-dots li {}
-
-// /* Активная точка */
-// .slick-dots li.slick-active {}
-
-// /* Элемент точки */
-// .slick-dots li button {}
