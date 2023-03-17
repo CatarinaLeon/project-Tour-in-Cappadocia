@@ -9,7 +9,9 @@
     "build": "gulp build --build",
     "zip": "gulp deployZIP --build",
     "deploy": "gulp deployFTP --build",
-    "svgSprite": "gulp svgSprite"
+    "svgSprite": "gulp svgSprite",
+    "predeploy": "npm run build",
+    "deployNet": "netlify deploy -p"
   },
   "author": "CatarinaLeon",
   "license": "ISC",

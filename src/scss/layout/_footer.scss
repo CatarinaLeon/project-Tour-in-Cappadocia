@@ -1,21 +1,21 @@
 .footer{
     height: 480px;
     position: relative;
-    background-image: url('../../img/Contacts/Contacts-1x.jpg');
+    background-image: url('../../img/Contacts/Contacts-mob-1x.webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     @media screen and (min-device-pixel-ratio: 2),
         screen and (min-resolution: 192dpi),
         screen and (min-resolution: 2dppx) {
-            background-image: url('../../img/Contacts/Contacts-2x.jpg');
+            background-image: url('../../img/Contacts/Contacts-mob-2x.webp');
         }
 }
 .footer__contacts{
     width: 235px;
     height: 350px;
     padding-top: 35px;
-    background-image: url('../../img/SVG/icon-aerostat.svg');
+    background-image: url('../../img/SVG/icons-aerostat.svg');
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0 auto 25px auto;
@@ -49,6 +49,8 @@
         &-item-link{
             display: flex;
             align-items: center;
+            font-size: 0;
+            line-height: 0;
         }
         &-item-link svg{
             width: 20px;
@@ -89,18 +91,30 @@
 @media screen and (min-width: 768px) {
 .footer {
     height: 600px;
+    background-image: url('../../img/Contacts/Contacts-tablet-1x.webp');
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+            background-image: url('../../img/Contacts/Contacts-tablet-2x.webp');
+        }
 }
 }
 
 @media screen and (min-width: 1260px) {
     .footer {
         height: 1180px;
-            &__container {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                gap: 140px;
+        background-image: url('../../img/Contacts/Contacts-1x.webp');
+        @media screen and (min-device-pixel-ratio: 2),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
+                background-image: url('../../img/Contacts/Contacts-2x.webp');
             }
+        &__container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 140px;
+        }
         }
     .footer__contacts{
         width: 356px;

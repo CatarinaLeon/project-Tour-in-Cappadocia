@@ -107,6 +107,7 @@ button {
   font-size: 50px;
   line-height: 1.32;
   color: var(--accent-color);
+  text-shadow: 1px 1px 2px #474847;
 }
 
 .title span {
@@ -268,7 +269,7 @@ button {
 .section__hero {
   padding-top: 130px;
   height: 400px;
-  background-image: url("../../img/Hero/Hero-1x.jpg");
+  background-image: url("../../img/Hero/Hero-mob-1x.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -450,7 +451,7 @@ button {
 .footer {
   height: 480px;
   position: relative;
-  background-image: url("../../img/Contacts/Contacts-1x.jpg");
+  background-image: url("../../img/Contacts/Contacts-mob-1x.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -460,7 +461,7 @@ button {
   width: 235px;
   height: 350px;
   padding-top: 35px;
-  background-image: url("../../img/SVG/icon-aerostat.svg");
+  background-image: url("../../img/SVG/icons-aerostat.svg");
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0 auto 25px auto;
@@ -500,6 +501,8 @@ button {
 .footer__contacts-item-link {
   display: flex;
   align-items: center;
+  font-size: 0;
+  line-height: 0;
 }
 
 .footer__contacts-item-link svg {
@@ -533,7 +536,7 @@ button {
 
 :root {
   --main-text-color: #000000;
-  --accent-color: #E2AB3F;
+  --accent-color: #dc9e25;
   --main-background: #ffffff;
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -709,6 +712,7 @@ button {
   .section__hero {
     padding-top: 120px;
     height: 600px;
+    background-image: url("../../img/Hero/Hero-tablet-1x.webp");
   }
 
   .hero__title {
@@ -818,7 +822,7 @@ button {
     top: 110px;
     width: 325px;
     height: 445px;
-    background-image: url("../../img/SVG/icon-aerostat-price.svg"), url("../../img/SVG/icon-aerostat-price.svg"), url("../../img/SVG/icon-aerostat-price.svg");
+    background-image: url("../../img/SVG/icon-aerostat.svg"), url("../../img/SVG/icon-aerostat.svg"), url("../../img/SVG/icon-aerostat.svg");
     background-repeat: no-repeat;
     background-size: 206px 305px, 73px 108px, 73px 108px;
     background-position: 115px 0px, 30px 190px, 95px 335px;
@@ -846,6 +850,17 @@ button {
 
   .footer {
     height: 600px;
+    background-image: url("../../img/Contacts/Contacts-tablet-1x.webp");
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .section__hero {
+    background-image: url("../../img/Hero/Hero-tablet-2x.webp");
+  }
+
+  .footer {
+    background-image: url("../../img/Contacts/Contacts-tablet-2x.webp");
   }
 }
 
@@ -938,6 +953,7 @@ button {
   .section__hero {
     padding-top: 250px;
     height: 1000px;
+    background-image: url("../../img/Hero/Hero-1x.webp");
   }
 
   .hero__title {
@@ -1127,6 +1143,7 @@ button {
 
   .footer {
     height: 1180px;
+    background-image: url("../../img/Contacts/Contacts-1x.webp");
   }
 
   .footer__container {
@@ -1176,12 +1193,22 @@ button {
   }
 }
 
-@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+@media screen and (min-width: 1260px) and (min-device-pixel-ratio: 2), screen and (min-width: 1260px) and (min-resolution: 192dpi), screen and (min-width: 1260px) and (min-resolution: 2dppx) {
   .section__hero {
-    background-image: url("../../img/Hero/Hero-2x.jpg");
+    background-image: url("../../img/Hero/Hero-2x.webp");
   }
 
   .footer {
-    background-image: url("../../img/Contacts/Contacts-2x.jpg");
+    background-image: url("../../img/Contacts/Contacts-2x.webp");
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .section__hero {
+    background-image: url("../../img/Hero/Hero-mob-2x.webp");
+  }
+
+  .footer {
+    background-image: url("../../img/Contacts/Contacts-mob-2x.webp");
   }
 }
