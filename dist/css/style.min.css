@@ -389,11 +389,39 @@ button {
 }
 
 .price__request-form {
+  position: relative;
   margin: 20px 0;
+}
+
+.price__request-form::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  background-image: url("../../img/Gif/loader.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 300px 225px;
+  display: none;
+}
+
+.price__request-form._sending::after {
+  display: block;
 }
 
 .price__request-form-title {
   margin-bottom: 20px;
+}
+
+.price__request-form label {
+  display: block;
+  width: 383px;
+  margin: 0 auto;
+  text-align: left;
+  margin-bottom: 3px;
 }
 
 .price__request-form-input {
@@ -401,11 +429,37 @@ button {
   padding: 15px 30px;
   margin-bottom: 20px;
   border: 1px solid var(--accent-color);
+  box-shadow: 0 0 3px var(--accent-color);
+}
+
+.price__request-form-input:focus-visible {
+  outline: #13bb13 auto 1px;
+}
+
+.price__request-form-input._error {
+  box-shadow: 0 0 5px red;
+}
+
+.price__request-form-input::placeholder {
+  font-style: italic;
 }
 
 .price__request-form-btn {
   display: block;
   margin: 0 auto;
+  transition: background-color 0.5s ease 0s;
+  position: relative;
+  top: 0;
+  box-shadow: 0 0 3px var(--accent-color);
+}
+
+.price__request-form-btn:hover {
+  background-color: var(--accent-color);
+}
+
+.price__request-form-btn:active {
+  top: 3px;
+  box-shadow: 0 0 5px green;
 }
 
 .price__request-item img {
@@ -808,11 +862,27 @@ button {
     width: 354px;
   }
 
+  .price__request-item-title {
+    line-height: 1.13;
+  }
+
+  .price__request-item-title span {
+    bottom: -8px;
+  }
+
   .price__request-form {
     margin: 25px 0 0 0;
   }
 
+  .price__request-form-title {
+    margin-bottom: 15px;
+  }
+
   .price__request-form-input {
+    width: 320px;
+  }
+
+  .price__request-form label {
     width: 320px;
   }
 
@@ -1092,6 +1162,10 @@ button {
   }
 
   .price__request-form-input {
+    width: 383px;
+  }
+
+  .price__request-form label {
     width: 383px;
   }
 

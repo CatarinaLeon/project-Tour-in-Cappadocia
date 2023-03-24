@@ -27,15 +27,17 @@
             <li class="price__request-item">
                 <h3 class="price__request-item-title title">1.07.2020<span>Найближча дата туру</span></h3>
                 <p class="price__request-item-title title"><strong>490$<span>Вартість</strong></span></p>
-                <form class="price__request-form">
+                <form class="price__request-form" id="form" action="#">
                     <h4 class="price__request-form-title list-text">Залишити заявку</h4>
-                    <label for="user-name">
-                        <input type="text" name="user-name" id="user-name" class="price__request-form-input"
-                            placeholder="Імя"></label>
-                    <label for="user-tell">
-                        <input type="text" name="user-tell" id="user-tell" class="price__request-form-input"
-                            placeholder="Телефон"></label>
-                    <button type="button" class="btn price__request-form-btn">Залишити заявку</button>
+                    <label for="user-name">Імя*</label>
+                    <input type="text" name="name" id="user-name" class="price__request-form-input _req"
+                        placeholder="Введіть своє ім`я"
+                        pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
+                        title="Назва може містити лише літери, апостроф, тире та пробіли. Наприклад Адріан, Джейкоб Мерсер, Шарль де Бац де Кастельмор д'Артаньян">
+                    <label for="user-phone">Телефон*</label>
+                    <input type="text" name="phone" id="user-phone" class="price__request-form-input _req _phone">
+                    <button type="submit" class="btn price__request-form-btn">Залишити заявку</button>
+                    <div class=""></div>
                 </form>
             </li>
             <li class="price__request-item">

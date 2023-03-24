@@ -1,7 +1,13 @@
 //вывод всех функций в flsFunctions
 import * as flsFunctions from "./modules/functions.js";
-import * as flsSlider from "./modules/slider.js";
+import { slickSlider } from "./modules/slider.js";
+import { sendingTheApplication } from "./modules/reserve.js";
 
-//проверка на поддержку Webp изображений и метка классов "webp" или "no-webp"
 flsFunctions.isWebp();
-flsSlider.slickSlider()
+slickSlider();
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    // 'use strict'
+    sendingTheApplication();
+})
