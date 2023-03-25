@@ -72,21 +72,14 @@
         }
         &-input._error{
             box-shadow: 0 0 5px red;
-            // border: 3px solid red;
         }
         &-input::placeholder{
             font-style: italic;
         }
         &-btn{
-            display: block;
             margin: 0 auto;
-            transition: background-color 0.5s ease 0s;
             position: relative;
             top: 0;
-            box-shadow: 0 0 3px var(--accent-color);
-        }
-        &-btn:hover{
-            background-color: var(--accent-color);
         }
         &-btn:active{
             top: 3px;
@@ -95,6 +88,7 @@
     }
     &-item img{
         height: auto;
+        box-shadow: 0 0 5px var(--accent-color);
     }
 }
 

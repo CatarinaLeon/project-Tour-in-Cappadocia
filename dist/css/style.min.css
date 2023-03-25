@@ -38,6 +38,10 @@ h2 {
   font-family: "Balqis";
 }
 
+a {
+  color: inherit;
+}
+
 .container {
   width: 100%;
   padding-left: 15px;
@@ -75,31 +79,24 @@ button {
   cursor: pointer;
 }
 
-.backdrop {
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  background-color: rgba(23, 26, 36, 0.7);
-  transition: opacity 200ms linear;
-  z-index: 3;
-}
-
-.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-}
-
 .btn {
   width: 190px;
   padding: 10px;
+  display: block;
   font-size: 16px;
   line-height: 1.25;
   text-transform: uppercase;
+  text-align: center;
   background-color: inherit;
   border: 1px solid var(--accent-color);
   cursor: pointer;
-  transition-duration: 250ms;
+  box-shadow: 0 0 3px var(--accent-color);
+  transition: background-color 0.5s ease 0s;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: var(--accent-color);
 }
 
 .title {
@@ -129,49 +126,6 @@ button {
 .list-text {
   font-size: 16px;
   line-height: 1.25;
-}
-
-.mob-menu {
-  position: relative;
-  top: 15%;
-  left: 50%;
-  z-index: 5;
-  transform: translate(-50%, -15%);
-  max-width: 320px;
-  height: 50%;
-  padding: 60px 40px 40px 40px;
-  border-radius: 5px;
-  border: 5px solid var(--accent-color);
-  background-color: var(--main-background);
-}
-
-.mob-menu__btn-close {
-  position: absolute;
-  top: 5px;
-  right: 5px;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: none;
-  background-color: transparent;
-}
-
-.mob-menu__list {
-  text-align: center;
-}
-
-.mob-menu__item:not(:last-child) {
-  margin-bottom: 25px;
-}
-
-.mob-menu__item .mob-menu__link {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.3888888889;
-  letter-spacing: 0.1em;
-  color: var(--main-text-color);
 }
 
 .section {
@@ -251,7 +205,6 @@ button {
   gap: 5px;
   font-size: 16px;
   line-height: 1.25;
-  color: inherit;
 }
 
 .nav__list {
@@ -445,16 +398,9 @@ button {
 }
 
 .price__request-form-btn {
-  display: block;
   margin: 0 auto;
-  transition: background-color 0.5s ease 0s;
   position: relative;
   top: 0;
-  box-shadow: 0 0 3px var(--accent-color);
-}
-
-.price__request-form-btn:hover {
-  background-color: var(--accent-color);
 }
 
 .price__request-form-btn:active {
@@ -464,6 +410,7 @@ button {
 
 .price__request-item img {
   height: auto;
+  box-shadow: 0 0 5px var(--accent-color);
 }
 
 .route__box {
@@ -537,7 +484,6 @@ button {
   gap: 5px;
   font-size: 16px;
   line-height: 1.19;
-  color: inherit;
 }
 
 .footer__contacts-link svg {
@@ -593,12 +539,6 @@ button {
   --accent-color: #dc9e25;
   --main-background: #ffffff;
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.btn:hover,
-.btn:focus {
-  transition-duration: 250ms;
-  transition-timing-function: var(--timing-function);
 }
 
 .visually-hidden {
@@ -934,12 +874,6 @@ button {
   }
 }
 
-@media screen and (min-width: 1200) {
-  .mob-menu__btn-close {
-    display: none;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .section {
     padding-top: 70px;
@@ -955,7 +889,7 @@ button {
   .btn {
     width: 280px;
     padding: 12px;
-    font-size: 24px;
+    font-size: 22px;
     line-height: 1.17;
   }
 

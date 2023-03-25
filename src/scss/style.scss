@@ -4,11 +4,9 @@
 @import './base/_container';
 @import './base/_reset';
 
-@import './components/backdrop';
 @import './components/btn';
 @import './components/title';
 @import './components/text';
-@import './components/modal';
 @import './components/section';
 @import './components/slider';
 
@@ -21,5 +19,4 @@
 @import './layout/_footer';
 
 @import './utils/vars';
-@import './utils/placeholders';
 @import './utils/hidden';
