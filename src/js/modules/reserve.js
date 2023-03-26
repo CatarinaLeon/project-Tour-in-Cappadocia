@@ -1,4 +1,5 @@
 import IMask from 'imask';
+
 export function sendingTheApplication() {
     const form = document.getElementById('form')
     // вешаем событие на переменную form и чтобы перейти к отправке формы подключаем функцию formSend
@@ -7,7 +8,7 @@ export function sendingTheApplication() {
     // маска для інпута №tell
     const element = document.getElementById('user-phone');
     const maskOptions = {
-        mask: '+{380} (00)-000-00-00',
+        mask: '+{38} (000)-000-00-00',
         lazy: false
     };
     new IMask(element, maskOptions);
@@ -96,6 +97,6 @@ export function sendingTheApplication() {
     }
     // проверка валидация номена тел
     function phoneTest(input) {
-        return !/^\+[0-9]{3}\s\((\d+)\)-\d{3}-\d{2}-\d{2}/.test(input.value)
+        return !/^\+[0-9]{2}\s\((\d+)\)-\d{3}-\d{2}-\d{2}/.test(input.value)
     }
 }
